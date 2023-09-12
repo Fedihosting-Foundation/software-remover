@@ -47,3 +47,5 @@ def main():
                     lemmy.delete_post(True, post.id)
         i += 1
         sleep(2)
+
+main()
