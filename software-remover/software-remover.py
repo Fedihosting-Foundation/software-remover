@@ -24,11 +24,11 @@ def main():
     found_instances = []
     for instance in instances.federated_instances.allowed:
         if instance.name in software:
-            found_instances.append(instance)
+            found_instances.append(instance.id)
         
     for instance in instances.federated_instances.blocked:
         if instance.name in software:
-            found_instances.append(instance)
+            found_instances.append(instance.id)
 
     for instance in instances.federated_instances.linked:
         if instance.software in software:
